@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio profesional Teguh Rizki Jaya — S1 Ilmu Hukum, analis dokumen perjanjian, kepala produksi, penulis gagasan sosial dan hukum.">
+  <meta name="theme-color" content="#0b0c0f">
+  <title>Teguh Rizki Jaya — Professional Portfolio</title>
+  <style>
+    :root{
+      --bg:#07080a; --bg-soft:#0d0f12; --card:#111419; --text:#f4f6f8; --muted:#9ba3ad;
+      --line:#242a31; --accent:#8df0c6; --accent-2:#8bb9ff; --white:#fff;
+      --shadow:0 24px 70px rgba(0,0,0,.28); --radius:22px; --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 80% 0%,rgba(139,185,255,.1),transparent 30%),radial-gradient(circle at 10% 20%,rgba(141,240,198,.07),transparent 26%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(7,8,10,.74);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}
+    .mark{width:38px;height:38px;border:1px solid #34404a;border-radius:11px;display:grid;place-items:center;font-size:13px;background:linear-gradient(135deg,rgba(141,240,198,.12),rgba(139,185,255,.12))}
+    .nav-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+    .nav-links a{font-size:14px;color:var(--muted);padding:10px 12px;border-radius:10px}
+    .nav-links a:hover{color:var(--text);background:#101318}
+    .hero{padding:88px 0 70px}
+    .hero-grid{display:grid;grid-template-columns:1.32fr .68fr;gap:56px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;text-transform:uppercase;letter-spacing:.17em;color:#c8d0d9;font-weight:700}
+    .eyebrow:before{content:"";width:30px;height:1px;background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+    h1{font-size:clamp(52px,8vw,92px);line-height:.95;letter-spacing:-.055em;margin:16px 0 24px;max-width:850px}
+    .hero h1 span{background:linear-gradient(90deg,#fff 15%,#dce9ff 48%,#a7f3d0 88%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:clamp(18px,2.1vw,23px);color:#c9d0d7;max-width:760px;margin:0 0 28px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero > .container .hero-actions > .btn{width:230px;height:48px;min-width:230px;min-height:48px;padding:0 18px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;white-space:nowrap}
+    .contact .hero-actions > .btn{width:180px;height:48px;min-width:180px;min-height:48px;padding:0 18px;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;white-space:nowrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line);padding:13px 18px;border-radius:13px;font-weight:700;font-size:14px;transition:.22s ease}
+    .btn.primary{background:var(--text);color:#0a0c0f;border-color:var(--text)}
+    .btn.secondary{background:#101318;color:#eef2f5}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(0,0,0,.2)}
+    .hero-card{position:relative}
+    .photo-wrap{position:relative;padding:10px;border:1px solid #2a333d;border-radius:28px;background:linear-gradient(135deg,#171b21,#0f1216);box-shadow:var(--shadow);transform:none}
+    .photo-wrap img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:19px;filter:saturate(.95)}
+    .photo-note{position:absolute;left:18px;bottom:18px;max-width:calc(100% - 36px);background:#111419;border:1px solid #2c333b;border-radius:16px;padding:12px 14px;box-shadow:var(--shadow);font-size:12px;color:#bfc7d0;transform:none;rotate:0deg;box-sizing:border-box}
+    .photo-note strong{display:block;color:var(--text);font-size:13px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:42px}
+    .stat{border:1px solid var(--line);background:rgba(17,20,25,.74);border-radius:16px;padding:18px}
+    .stat strong{display:block;font-size:25px;letter-spacing:-.03em}.stat span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+    section{padding:72px 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}
+    .section-head h2{font-size:clamp(30px,4vw,50px);letter-spacing:-.04em;line-height:1;margin:0}
+    .section-head p{margin:0;color:var(--muted);max-width:560px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .card{background:linear-gradient(180deg,rgba(17,20,25,.98),rgba(12,14,18,.98));border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 14px 44px rgba(0,0,0,.14)}
+    .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.pill{font-size:12px;padding:7px 10px;border-radius:999px;background:#0e1115;border:1px solid #293039;color:#c7ced6}
+    .experience{position:relative}.experience:before{content:"";position:absolute;left:8px;top:6px;bottom:4px;width:1px;background:#2a3037}
+    .job{position:relative;padding-left:30px;margin-bottom:28px}.job:last-child{margin-bottom:0}
+    .dot{position:absolute;left:2px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+    .job-meta{font-size:12px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.11em}.job h3{margin:6px 0 2px;font-size:19px}.job .company{color:#c1c8d0;font-weight:650}.job p{margin:8px 0 0;color:var(--muted);font-size:14px}
+    .skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skill{padding:18px;border-radius:16px;border:1px solid var(--line);background:#0d1014}.skill strong{display:block;margin-bottom:6px}.skill span{font-size:13px;color:var(--muted)}
+    .essay-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .essay-cover{overflow:hidden;border-radius:15px;border:1px solid #2a3036;background:#eaeaea;margin-bottom:18px}.essay-cover img{width:100%;aspect-ratio:1/1.414;object-fit:contain;object-position:center;background:#eaeaea}
+    .essay-tag{display:inline-flex;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;padding:6px 9px;border:1px solid #33414b;border-radius:999px;color:#cbd5df}.essay h3{font-size:25px;line-height:1.12;letter-spacing:-.03em;margin:13px 0 10px}.essay p{color:var(--muted);font-size:14px;margin:0}.essay .numbers{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.number{border:1px solid #2b333b;border-radius:12px;padding:10px 12px;background:#0d1115}.number strong{display:block;font-size:16px}.number span{font-size:11px;color:var(--muted)}.essay .numbers .number{min-height:60px;box-sizing:border-box}.essay .numbers .number-link{display:inline-flex;align-items:center;justify-content:center;min-width:128px;color:inherit;text-decoration:none}.essay .numbers .number-link strong{white-space:nowrap}.essay .numbers .number-link:hover{transform:translateY(-1px);border-color:#3b4650}
+    .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.quote{font-size:27px;line-height:1.24;letter-spacing:-.03em;margin:0}.small{color:var(--muted);font-size:14px}
+    .contact{display:grid;grid-template-columns:1fr .9fr;gap:18px}.contact-list{display:grid;gap:10px;margin-top:18px}.contact-item{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#0d1014}.contact-item small{display:block;color:#7f8994;text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:10px}.contact-item span{display:block;margin-top:3px;color:#edf1f5}
+    footer{padding:30px 0 60px;border-top:1px solid var(--line);color:#76818b;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}
+    .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}
+    .top-btn{position:fixed;right:18px;bottom:18px;width:42px;height:42px;border-radius:12px;border:1px solid #303741;background:#101318;color:#fff;display:none;place-items:center;cursor:pointer;box-shadow:var(--shadow)}
+    @media(max-width:900px){.hero-grid,.about-grid,.contact{grid-template-columns:1fr}.hero{padding-top:56px}.hero-card{max-width:430px}.stats{grid-template-columns:repeat(2,1fr)}.grid-2,.essay-grid{grid-template-columns:1fr}}
+    @media(max-width:640px){.container{width:min(var(--max),calc(100% - 28px))}.nav-inner{height:auto;padding:12px 0}.nav-links{display:none}.hero h1{font-size:54px}.section-head{display:block}.section-head p{margin-top:12px}.stats{grid-template-columns:1fr 1fr}.skill-grid{grid-template-columns:1fr}.hero-actions{flex-direction:column}.hero > .container .hero-actions > .btn,.contact .hero-actions > .btn{width:100%;min-width:100%;height:48px;min-height:48px}.photo-note{left:18px;bottom:18px;max-width:calc(100% - 36px)}.card{padding:21px}}
+    @media print{.nav,.hero-actions,.top-btn{display:none!important}body{background:#fff;color:#111}.hero h1 span{background:none;color:#111}.card,.stat,.contact-item{box-shadow:none;background:#fff;border-color:#ddd}.muted,.small,.job p,.essay p{color:#555}.hero,.section{padding:30px 0}a{color:#111}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top"><span class="mark">TRJ</span><span>Teguh Rizki Jaya</span></a>
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a href="#about">Profil</a><a href="#experience">Pengalaman</a><a href="#skills">Keahlian</a><a href="#work">Karya</a><a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="reveal">
+            <div class="eyebrow">Professional Portfolio · 2026</div>
+            <h1>Teguh Rizki <span>Jaya.</span></h1>
+            <p class="lead">S1 Ilmu Hukum dengan pengalaman lintas bidang: analisis dokumen perjanjian, kepemimpinan produksi, administrasi data, operasional retail, serta pengembangan gagasan sosial dan hukum.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#work">Lihat Karya</a>
+              <a class="btn secondary" href="berkas-lamaran-karya-tulis-esai.pdf" target="_blank" rel="noopener">Buka Berkas Lengkap ↗</a>
+            </div>
+          </div>
+          <div class="hero-card reveal">
+<div class="photo-wrap"><img alt="Foto profil Teguh Rizki Jaya" src="profile.jpg"/><div class="photo-note"><strong>Open to opportunity</strong>Hukum · Operasional · Analisis · Project</div></div>
+
+</div>
+        </div>
+        <div class="stats reveal" aria-label="Ringkasan profil">
+          <div class="stat"><strong>3.81</strong><span>IPK S1 Ilmu Hukum</span></div>
+          <div class="stat"><strong>4.00</strong><span>IPS Semester V</span></div>
+          <div class="stat"><strong>5+</strong><span>Peran Kerja & Project</span></div>
+          <div class="stat"><strong>2</strong><span>Karya Gagasan Utama</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">01 · Profil</div><h2>Orang Yang Nyaman Bekerja Lintas Fungsi.</h2></div><p>Berangkat dari Ilmu Hukum, lalu bertumbuh melalui pengalaman produksi, data, retail, kegiatan sosial, dan analisis dokumen.</p></div>
+        <div class="about-grid">
+          <article class="card reveal"><p class="quote">“Terbuka untuk bekerja dalam bidang hukum, bidang sesuai pengalaman, maupun bidang baru untuk mempelajari hal baru.”</p><p class="small" style="margin-top:18px">Profil ini dirangkum dari CV dalam berkas lamaran. Detail sensitif seperti tanggal lahir, status, dan alamat lengkap tidak ditampilkan di halaman publik.</p><div class="pill-row"><span class="pill">Legal & Document Analysis</span><span class="pill">Production Operations</span><span class="pill">Data Administration</span><span class="pill">Project Thinking</span><span class="pill">Creative Tools</span></div></article>
+          <article class="card reveal"><div class="eyebrow">Snapshot</div><div style="margin-top:18px"><div class="small">Pendidikan</div><strong style="font-size:20px">S1 Ilmu Hukum</strong><div class="small">Universitas Satya Negara Indonesia · 2019–2026</div></div><div style="margin-top:20px"><div class="small">Pengalaman Terbaru</div><strong style="font-size:20px">Staf Analis Dokumen Perjanjian</strong><div class="small">PT. Arsy Gemilang Indonusa · Freelancer · 2026–sekarang</div></div><div style="margin-top:20px"><div class="small">Lokasi</div><strong style="font-size:20px">Jakarta, Indonesia</strong></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">02 · Pengalaman</div><h2>Lintas Industri, Satu Pola Kerja: Eksekusi.</h2></div><p>Dari lantai produksi hingga analisis dokumen, setiap peran membentuk cara saya bekerja, memecahkan masalah, dan menyelesaikan pekerjaan.</p></div>
+        <div class="card reveal experience">
+          <div class="job"><span class="dot"></span><div class="job-meta">2026 — Sekarang · Freelancer</div><h3>Staf Analis Dokumen Perjanjian</h3><div class="company">PT. Arsy Gemilang Indonusa</div><p>Menganalisis dan memverifikasi kelengkapan serta keakuratan dokumen perjanjian pinjol dan CC klien; mengidentifikasi hak, kewajiban, serta ketentuan dalam perjanjian kredit.</p></div>
+          <div class="job"><span class="dot"></span><div class="job-meta">2022 — 2026</div><h3>Kepala Produksi Pabrik Sepatu</h3><div class="company">PT. VPN · Valencia by Enrica (VBE)</div><p>Mengontrol kualitas, merencanakan, dan mengendalikan jadwal produksi untuk mencapai target volume dan tenggat waktu yang telah direncanakan.</p></div>
+          <div class="job"><span class="dot"></span><div class="job-meta">2022</div><h3>Kepala Toko · Booth Mall</h3><div class="company">PT. Idea Solusi Indonesia · Erigo</div><p>Memimpin operasional booth/toko, termasuk pencapaian target penjualan dan manajemen shift.</p></div>
+          <div class="job"><span class="dot"></span><div class="job-meta">2021</div><h3>Kepala Divisi Input Data Penerima Bansos</h3><div class="company">Kemensos · Dinsos Kota Sawahlunto</div><p>Mengkoordinasikan verifikasi dan validasi data penerima bantuan sosial untuk memastikan akurasi serta konsistensi data.</p></div>
+          <div class="job"><span class="dot"></span><div class="job-meta">2018 — 2021</div><h3>Kepala Divisi Input Data Stock, Dll.</h3><div class="company">CV. Gemilang Agrotama · Supplier Sayur</div><p>Memasukkan dan memperbarui data stok serta faktur secara akurat di sistem, sekaligus menangani input data administrasi lainnya.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">03 · Keahlian</div><h2>Kombinasi Analytical, Operational, dan Creative.</h2></div><p>Kemampuan ini tumbuh dari pengalaman nyata—memimpin pekerjaan, membaca situasi, mengolah informasi, dan mencari cara yang lebih efektif untuk menyelesaikan masalah.</p></div>
+        <div class="grid-2">
+          <div class="card reveal"><div class="eyebrow">Core Skills</div><div class="skill-grid" style="margin-top:18px"><div class="skill"><strong>Kepemimpinan Tim</strong><span>Komunikasi dan Eksekusi Rencana Kerja.</span></div><div class="skill"><strong>Pemecahan Masalah</strong><span>Berbasis Data dan Pengalaman.</span></div><div class="skill"><strong>Decision Making</strong><span>Cepat Mengambil Keputusan Operasional.</span></div><div class="skill"><strong>Efisiensi Kerja</strong><span>Berinovasi untuk Meningkatkan Efektivitas dan Penghematan Anggaran.</span></div></div></div>
+          <div class="card reveal"><div class="eyebrow">Tools & Digital</div><div class="skill-grid" style="margin-top:18px"><div class="skill"><strong>Microsoft Office</strong><span>Produktivitas dan Administrasi Kerja.</span></div><div class="skill"><strong>Google Workspace</strong><span>Kolaborasi dan Pengelolaan Dokumen.</span></div><div class="skill"><strong>AI Agent & AI Chat</strong><span>Eksplorasi Workflow dan Bantuan Analitis.</span></div><div class="skill"><strong>Photoshop · Canva · PicsArt</strong><span>Editing dan Komunikasi Visual.</span></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">04 · Selected Work</div><h2>Gagasan Yang Dibuat Agar Bisa Diuji.</h2></div><p>Beberapa gagasan saya berangkat dari persoalan nyata—kemudian saya kembangkan menjadi konsep yang dapat dibaca, dipertanyakan, dan diuji.</p></div>
+        <div class="essay-grid">
+          <article class="card essay reveal"><div class="essay-cover"><img src="essay-social.jpg" alt="Halaman awal esai Makan Siang Gratis"></div><span class="essay-tag">Gagasan Sosial Umum</span><h3>“Makan Siang Gratis”</h3><p>Gagasan proyek sosial non-dana pemerintah yang mempertemukan sponsor, pelaku usaha lokal, relawan, dan penerima manfaat, dengan penekanan pada transparansi, pengukuran output, dan keberlanjutan.</p><div class="numbers"><div class="number"><strong>7 Hari</strong><span>Fase Percontohan</span></div><div class="number"><strong>Rp30 Juta</strong><span>Target Anggaran</span></div><div class="number"><strong>±1.027</strong><span>Paket Makanan</span></div><a class="number number-link" href="berkas-lamaran-karya-tulis-esai.pdf#page=20" target="_blank" rel="noopener"><strong>Baca di Berkas ↗</strong></a></div></article>
+          <article class="card essay reveal"><div class="essay-cover"><img src="essay-legal.jpg" alt="Halaman awal esai tentang efisiensi penanganan narapidana"></div><span class="essay-tag">Gagasan Hukum</span><h3>Efisiensi Penanganan Narapidana dengan Tindak Pidana Ringan</h3><p>Esai yang membahas alternatif penanganan perkara ringan melalui restorative justice, kerja sosial, denda, rehabilitasi, reintegrasi, serta penguatan pedoman dan sistem data.</p><div class="numbers"><div class="number"><strong>RJ</strong><span>Restorative Justice</span></div><div class="number"><strong>Ultimum</strong><span>Remedium</span></div><div class="number"><strong>Data-driven</strong><span>Policy Evaluation</span></div><a class="number number-link" href="berkas-lamaran-karya-tulis-esai.pdf#page=33" target="_blank" rel="noopener"><strong>Baca di Berkas ↗</strong></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">05 · Education & Recognition</div><h2>Fondasi Akademik + Pengalaman Organisasi.</h2></div><p>Fondasi akademik, pengalaman organisasi, dan berbagai pencapaian yang ikut membentuk cara saya belajar, memimpin, dan bekerja.</p></div>
+        <div class="grid-2">
+          <article class="card reveal"><div class="eyebrow">Education</div><h3 style="font-size:27px;margin:16px 0 2px">S1 Ilmu Hukum</h3><div style="color:#c2cad2">Universitas Satya Negara Indonesia · 2019–2026</div><p class="small" style="margin-top:10px">Lulus · IPK 3.81</p><div class="number" style="display:inline-block;margin-top:6px"><strong>IPS 4.00</strong><span>Semester V · 2020/2021</span></div></article>
+          <article class="card reveal"><div class="eyebrow">Recognition & Activity</div><div class="pill-row" style="margin-top:18px"><span class="pill">Beasiswa Universitas</span><span class="pill">Yayasan Beasiswa Jakarta</span><span class="pill">Latihan Dasar Organisasi Kemahasiswaan · 2019/2020</span><span class="pill">Mahasiswa Berprestasi · 2020/2021</span><span class="pill">Pejuang Muda Kemensos · 2021</span><span class="pill">Piagam Penghargaan DTKS Dinsos Kota Sawahlunto · 2021</span><span class="pill">Ketua Pengabdian pada Masyarakat · 2021–2022</span><span class="pill">Panitia Pelaksana Pengabdian pada Masyarakat · 2021–2022</span><span class="pill">Pembekalan Manajemen Organisasi & Rakerda GBNN DPD DKI Jakarta · 2022</span><span class="pill">Certificate of Completion Elementary Level of English at the Simpler Program · 2022</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">06 · Contact</div><h2>Mari Bicara Tentang Pekerjaan, Project, atau Kolaborasi.</h2></div><p>Terbuka untuk percakapan baru, kesempatan kerja, project, maupun kolaborasi yang dapat berkembang menjadi sesuatu yang berarti.</p></div>
+        <div class="contact">
+          <div class="card reveal"><div class="eyebrow">Reach me</div><div class="contact-list"><a class="contact-item" href="mailto:teguhrizkijaya102@gmail.com"><small>Email</small><span>teguhrizkijaya102@gmail.com</span></a><a class="contact-item" href="tel:+628997258164"><small>Phone / WhatsApp</small><span>+62 899 7258 164</span></a><div class="contact-item"><small>Location</small><span>Jakarta, Indonesia</span></div></div></div>
+          <div class="card reveal"><div class="eyebrow">Professional note</div><p style="font-size:21px;line-height:1.35;margin:16px 0">“Detail-oriented, terbuka belajar, dan nyaman memadukan kemampuan hukum dengan pengalaman operasional serta problem solving.”</p><p class="small">Portfolio ini merupakan presentasi web dari dokumen lamaran dan karya tulis yang diberikan, dengan penyederhanaan data sensitif untuk kebutuhan tampilan publik.</p><div class="hero-actions" style="margin-top:18px"><a class="btn primary" href="mailto:teguhrizkijaya102@gmail.com" data-email-action="compose" aria-label="Kirim Email" onclick="openEmailClient(event)">Kirim Email ↗</a><button class="btn secondary" id="copyEmail" type="button">Salin Email</button></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><span>© 2026 Teguh Rizki Jaya</span><span>Professional Portfolio · Built from submitted CV & written works</span></div></footer>
+  <button class="top-btn" id="topBtn" aria-label="Kembali ke atas">↑</button>
+
+  <script>
+    const io = new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    const topBtn=document.getElementById('topBtn');
+    window.addEventListener('scroll',()=>{topBtn.style.display=window.scrollY>600?'grid':'none'});
+    topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    function openEmailClient(event){
+      const button=event.currentTarget;
+      const mailto=button.getAttribute('href');
+      const isDesktop=/Windows NT|Macintosh|X11; Linux x86_64/i.test(navigator.userAgent) && !/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if(isDesktop){
+        event.preventDefault();
+        const gmailCompose='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent('teguhrizkijaya102@gmail.com');
+        window.location.href=gmailCompose;
+        return false;
+      }
+      // Mobile/tablet keeps the native mail handler that already works on the device.
+      if(mailto){ button.setAttribute('href', mailto); }
+      return true;
+    }
+
+    const copy=document.getElementById('copyEmail');
+    copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText('teguhrizkijaya102@gmail.com');const old=copy.textContent;copy.textContent='Email tersalin ✓';setTimeout(()=>copy.textContent=old,1600)}catch(e){copy.textContent='Salin manual: teguhrizkijaya102@gmail.com'}});
+  </script>
+</body>
+</html>
